@@ -173,7 +173,7 @@ let adult = 0;
 for (let j = 0; j < users.length; j++) {
 	console.log(users[j].age);
 
-	if (users[j].age > 18) {
+	if (users[j].age < 18) {
 		adult++
 	}
 
