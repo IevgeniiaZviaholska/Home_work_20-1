@@ -157,10 +157,10 @@ console.log(users);
 // //HomeWork1
 let online = 0;
 
-for (let e = 0; e < users.length; e++) {
+for (let i = 0; i < users.length; i++) {
 	
 
-	if (users[e].online_status === true) {
+	if (users[i].online_status === true) {
 		online++
 	}
 
@@ -170,10 +170,10 @@ console.log(online)
 // //HomeWork2
 let adult = 0;
 
-for (let e = 0; e < users.length; e++) {
-	console.log(users[e].age);
+for (let j = 0; j < users.length; j++) {
+	console.log(users[j].age);
 
-	if (users[e].age > 18) {
+	if (users[j].age > 18) {
 		adult++
 	}
 
@@ -183,12 +183,13 @@ console.log(adult)
 
 let todos = [todo1, todo2, todo3];
 let todosNotComplete = [];
+len = todos.length;
 
-for (let i = 0; i < todos.length; i++) {
+for (let k = 0; k < len; k++) {
 
 
-	if (todos[i].completed === false) {
-		todosNotComplete = todosNotComplete.concat(todos[i].title);
+	if (todos[k].completed === false) {
+		todosNotComplete = todosNotComplete.concat(todos[k].title);
 	};
 
 }
